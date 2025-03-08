@@ -41,7 +41,7 @@ h4{
 }
 
 header{
-   
+
     padding: 10px 15px;
     line-height: 30px;
     color: white;
@@ -63,4 +63,10 @@ td{
 border: 1px solid rgb(212, 212, 216);
 width: 70%;
 padding: 10px 5px;
+}
+
+tr:hover{
+    background-color: rgb(175, 175, 177);
+    color: white;
+    cursor: pointer;
 }
