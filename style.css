@@ -18,10 +18,11 @@ h1{
     display: flex;
     flex-wrap: wrap;
     gap: 40px;
+    width: 60%;
     align-items: center;
     justify-content: center;
     border: 0px solid black;
-    width: 50%;
+ 
   
     margin: 6rem auto;
 }
@@ -40,7 +41,7 @@ h4{
 }
 
 header{
-    width: 84%;
+   
     padding: 10px 15px;
     line-height: 30px;
     color: white;
