@@ -103,8 +103,8 @@ const promptintern = async () =>{
         },
         {
             type:'input',
-            name:'Intern',
-            message:"Enter the position"
+            name:'intern',
+            message:"Working position as intern"
         },
         {
             type:'input',
@@ -121,7 +121,7 @@ const promptintern = async () =>{
             message:'enter the intern school'
         }
     ])
-    const intern = new Intern(interninfo.name,interninfo.position,interninfo.id,interninfo.email,interninfo.school);
+    const intern = new Intern(interninfo.name,interninfo.id,interninfo.email,interninfo.school,interninfo.intern);
     team.push(intern)
     menu()
 }
@@ -162,6 +162,7 @@ const generatecards = () =>{
                         <h3>${member.name}</h3>
                       ${member.position?`<h4><i class="fas fa-mug-hot"></i>${member.position}<h4/>`:''}
                       ${member.skill?`<h4><i class="fa-solid fa-glasses"></i>${member.skill}<h4/>`:''}
+                      ${member.working?`<h4><i class="fa-solid fa-user-graduate"></i>${member.working}<h4/>`:''}
                     </header>
                     <table class="info">
                         <tr>
