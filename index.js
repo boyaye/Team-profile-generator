@@ -150,19 +150,18 @@ const generatehtml = () =>{
 </html>
     `
     fs.writeFileSync('./team.html',htmlinfo)
+    console.log('Team has been created Successfully')
 }
 
 const generatecards = () =>{
-    console.log(team)
      return team.map(member => {
-        console.log(member)
        return `
         <div class="list">
                     <header>
                         <h3>${member.name}</h3>
-                      ${member.position?`<h4><i class="fas fa-mug-hot"></i>${member.position}<h4/>`:''}
-                      ${member.skill?`<h4><i class="fa-solid fa-glasses"></i>${member.skill}<h4/>`:''}
-                      ${member.working?`<h4><i class="fa-solid fa-user-graduate"></i>${member.working}<h4/>`:''}
+                      ${member.position?`<h4><i class="fas fa-mug-hot"></i>${member.position}</h4>`:''}
+                      ${member.skill?`<h4><i class="fa-solid fa-glasses"></i>${member.skill}</h4>`:''}
+                      ${member.working?`<h4><i class="fa-solid fa-user-graduate"></i>${member.working}</h4>`:''}
                     </header>
                     <table class="info">
                         <tr>
