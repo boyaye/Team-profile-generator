@@ -18,7 +18,7 @@ h1{
     display: flex;
     flex-wrap: wrap;
     gap: 40px;
-    width: 60%;
+    width: 45%;
     align-items: center;
     justify-content: center;
     border: 0px solid black;
@@ -53,16 +53,16 @@ header{
 table{
     border: 1px solid white;
     background-color: white;
-    width: 80%;
+    width: 90%;
     border-collapse:collapse;
-    margin:20px auto;
+    margin:45px auto;
     font-size: 12px;
 }
 
 td{
 border: 1px solid rgb(212, 212, 216);
 width: 70%;
-padding: 10px 5px;
+padding: 10px;
 }
 
 tr:hover{
